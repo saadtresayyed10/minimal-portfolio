@@ -1,6 +1,6 @@
 "use client";
 
-import { Switch } from "@/components/ui/switch";
+import { ThemeSwitch } from "@/components/ui/switch";
 import { useEffect, useState } from "react";
 
 const Navbar = () => {
@@ -24,7 +24,7 @@ const Navbar = () => {
     );
     const date = String(now.getDay()).padStart(2, "0");
     const month = String(now.getMonth() + 1).padStart(2, "0");
-    const year = String(now.getFullYear()).slice(-2);
+    const year = String(now.getFullYear());
 
     return `${day}, ${date}/${month}/${year}`;
   };
@@ -42,10 +42,20 @@ const Navbar = () => {
 
   return (
     <nav className="flex justify-between items-center px-10 py-4">
-      <h1 className="font-agrandir lg:text-4xl font-semibold tracking-wider">
-        {currentDate}
-      </h1>
-      <Switch />
+      <div className="flex justify-center items-center flex-col">
+        <h1 className="font-agrandir lg:text-2xl font-semibold tracking-wider">
+          {currentTime}
+        </h1>
+        <h1 className="font-agrandir lg:text-sm font-light tracking-wider">
+          {currentDate}
+        </h1>
+      </div>
+      <div className="flex justify-center items-center flex-col gap-y-2">
+        <ThemeSwitch />
+        <p className="font-agrandir lg:text-[8px] font-light tracking-wider">
+          Light & Dark
+        </p>
+      </div>
     </nav>
   );
 };
