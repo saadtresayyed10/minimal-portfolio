@@ -1,7 +1,11 @@
+import Navbar from "./_components/Navbar";
+
 const HomeLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
-      <header></header>
+      <header>
+        <Navbar />
+      </header>
       <main>{children}</main>
       <footer></footer>
     </>
