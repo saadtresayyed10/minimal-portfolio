@@ -1,5 +1,9 @@
 const HomePage = () => {
-  return <div className="font-seasons">HomePage</div>;
+  return (
+    <div className="flex justify-center items-center flex-col min-h-screen w-full">
+      HomePage
+    </div>
+  );
 };
 
 export default HomePage;
