@@ -10,6 +10,7 @@ export function QuestionForm() {
     e.preventDefault();
 
     const questionsData = { questions };
+    console.log("Sending data to API:", questionsData);
 
     const response = await fetch("/api/questionaire", {
       method: "POST",
