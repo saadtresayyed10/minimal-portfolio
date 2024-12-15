@@ -1,10 +1,12 @@
 "use client";
 
 import { PlaceholdersAndVanishInput } from "@/components/ui/placeholders-and-vanish-input";
+import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
 
 export function QuestionForm() {
   const [questions, setQuestions] = useState<string>("");
+  const { toast } = useToast();
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -19,9 +21,15 @@ export function QuestionForm() {
     });
 
     if (response.ok) {
-      alert("Question sent to Saad");
+      toast({
+        title: "Message sent :)",
+        description: "Saad will soon reply to your message.",
+      });
     } else {
-      alert("Question was not delivered due to some issues");
+      toast({
+        title: "Message did not sent :(",
+        description: "Saad will fix this issue soon.",
+      });
     }
 
     setQuestions("");
