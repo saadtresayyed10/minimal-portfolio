@@ -1,3 +1,5 @@
+import { QuestionForm } from "./_components/QuestionForm";
+
 const AboutPage = () => {
   return (
     <div className="flex flex-col lg:gap-y-10 justify-center items-center w-full min-h-screen lg:text-xl font-medium capitalize text-center font-agrandir">
@@ -26,6 +28,7 @@ const AboutPage = () => {
         bridge to reach me. Speak of anything; I&apos;ll lend an ear and a hand
         to guide you through.
       </h4>
+      <QuestionForm />
     </div>
   );
 };
