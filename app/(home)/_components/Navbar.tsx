@@ -41,18 +41,18 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="flex justify-between items-center px-10 py-4">
+    <nav className="flex justify-between items-center lg:px-10 px-6 py-4">
       <div className="flex justify-center items-center flex-col">
-        <h1 className="font-agrandir lg:text-2xl font-semibold tracking-wider">
+        <h1 className="font-agrandir text-2xl font-semibold tracking-wider">
           {currentTime}
         </h1>
-        <h1 className="font-agrandir lg:text-sm font-light tracking-wider">
+        <h1 className="font-agrandir text-sm font-light tracking-wider">
           {currentDate}
         </h1>
       </div>
       <div className="flex justify-center items-center flex-col gap-y-2">
         <ThemeSwitch />
-        <p className="font-agrandir lg:text-[8px] font-light tracking-wider">
+        <p className="font-agrandir text-[8px] font-light tracking-wider">
           Light & Dark
         </p>
       </div>

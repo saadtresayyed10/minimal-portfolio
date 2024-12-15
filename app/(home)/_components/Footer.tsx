@@ -8,8 +8,8 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="flex justify-between items-center px-10 py-4">
-      <div className="flex justify-center items-center lg:gap-x-5">
+    <div className="flex justify-between items-center px-6 py-4">
+      <div className="flex justify-center items-center lg:gap-x-5 gap-x-2">
         <Link
           target="_blank"
           href="https://www.linkedin.com/in/saad-sayyed-trev/"
@@ -30,14 +30,14 @@ const Footer = () => {
           <IconBrandInstagram className="w-5 h-5 text-neutral-800 dark:text-neutral-100 stroke-[1.5]" />
         </Link>
       </div>
-      <div className="flex justify-center items-center lg:gap-x-10">
+      <div className="flex justify-center items-center lg:gap-x-10 gap-x-6">
         <Link href="/careers">
-          <p className="font-agrandir lg:text-xs font-light tracking-wider">
+          <p className="font-agrandir text-xs font-light tracking-wider">
             Careers
           </p>
         </Link>
         <Link href="/">
-          <p className="font-agrandir lg:text-xs font-light tracking-wider">
+          <p className="font-agrandir text-xs font-light tracking-wider">
             Blog
           </p>
         </Link>
