@@ -6,9 +6,9 @@ const AboutPage = () => {
       <h4 className="lg:w-[80%] lg:mt-16">
         Greetings, traveler. I am Saad Sayyed, a 21-year-old soul residing in
         the vibrant heart of Pune, Maharashtra. This website reflects the quiet
-        harmony of my life—a canvas of simplicity painted with subtle strokes. I
-        am not an introvert, but an extrovert who dances to his own rhythm,
-        steering clear of shallow tides.
+        minimalistic harmony of my life—a canvas of simplicity painted with
+        subtle strokes. I am not an introvert, but an extrovert who dances to
+        his own rhythm, steering clear of shallow tides.
       </h4>
       <h4 className="lg:w-[80%]">
         I walk in the grace of GOD, for without Him, I am but a shadow. My mind
