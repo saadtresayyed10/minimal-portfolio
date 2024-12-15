@@ -39,7 +39,7 @@ export function QuestionForm() {
     "How do I manage multiple careers?",
     "How do I heal and grow in a messy environment?",
     "How do I learn life through video-games?",
-    "How do I trust in GOD and so how can you too?",
+    "How do I put my trust in GOD and so how can you too?",
     "What drives me to be me?",
   ];
 
