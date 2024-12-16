@@ -27,9 +27,9 @@ const ProjectContent = ({ img, desc, link, name }: ProjectContentProps) => {
         <p className="capitalize font-agrandir text-center lg:text-base text-sm">
           {desc}
         </p>
-        <Button className="w-full">
+        <Button className="w-full capitalize font-agrandir">
           <Link target="_blank" href={link}>
-            See Project
+            Check this project
           </Link>
         </Button>
       </CardContent>
