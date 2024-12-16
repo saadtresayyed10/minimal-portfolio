@@ -22,7 +22,7 @@ const bodyLinks = [
 
 const BodyLinks = () => {
   return (
-    <div className="flex justify-start items-start flex-col gap-y-10 font-agrandir capitalize font-bold lg:text-6xl text-6xl lg:mr-[500px]">
+    <div className="flex justify-start items-start flex-col gap-y-10 font-agrandir capitalize font-bold lg:text-6xl text-5xl lg:mr-[500px]">
       {bodyLinks.map((bodyLink) => (
         <Link
           key={bodyLink.name}
