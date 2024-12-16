@@ -8,6 +8,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import ProjectContent from "./ProjectContent";
 
 const projects = [
   {
@@ -35,7 +36,7 @@ const projects = [
     id: 4,
     name: "Expense Tracker",
     img: "/images/expense.png",
-    link: "https://evenidk.vercel.app",
+    link: "https://expense-tracker-down.vercel.app/",
     desc: "",
   },
 ];
@@ -46,13 +47,12 @@ export function CarouselProjects() {
       <CarouselContent>
         {projects.map((project) => (
           <CarouselItem key={project.id}>
-            <div className="p-1">
-              <Card>
-                <CardContent className="flex aspect-square items-center justify-center p-6">
-                  <span className="text-4xl font-semibold">{project.name}</span>
-                </CardContent>
-              </Card>
-            </div>
+            <ProjectContent
+              desc={project.desc}
+              name={project.name}
+              link={project.link}
+              img={project.img}
+            />
           </CarouselItem>
         ))}
       </CarouselContent>
