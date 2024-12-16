@@ -1,5 +1,6 @@
 "use client";
 
+import WordPullUp from "@/components/ui/word-pull-up";
 import { Loader2 } from "lucide-react";
 import React, { useEffect, useState } from "react";
 import store from "store2";
@@ -119,6 +120,10 @@ const DailyMotivation = () => {
         </span>
         {motivation.action}
       </p>
+      <WordPullUp
+        className="mt-10 capitalize block lg:hidden text-xs text-muted-foreground"
+        words="Please swipe right to see next project."
+      />
     </div>
   );
 };

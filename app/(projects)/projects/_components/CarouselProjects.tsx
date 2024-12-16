@@ -43,7 +43,7 @@ const projects = [
 
 export function CarouselProjects() {
   return (
-    <Carousel className="w-full max-w-xs">
+    <Carousel className="lg:w-full w-full max-w-xs mx-auto overflow-hidden">
       <CarouselContent>
         {projects.map((project) => (
           <CarouselItem key={project.id}>
