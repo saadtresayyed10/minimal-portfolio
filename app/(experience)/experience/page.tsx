@@ -1,5 +1,7 @@
 const WorkPage = () => {
-  return <div>WorkPage</div>;
+  return (
+    <div className="flex justify-center items-center w-full min-h-screen"></div>
+  );
 };
 
 export default WorkPage;
