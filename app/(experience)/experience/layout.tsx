@@ -1,4 +1,5 @@
 import NestNav from "@/app/(about)/about/_components/NestNav";
+import Footer from "@/app/(home)/_components/Footer";
 
 const LayoutExp = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -7,6 +8,9 @@ const LayoutExp = ({ children }: { children: React.ReactNode }) => {
         <NestNav />
       </header>
       <main>{children}</main>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 };

@@ -31,9 +31,9 @@ const Footer = () => {
         </Link>
       </div>
       <div className="flex justify-center items-center lg:gap-x-10 gap-x-6">
-        <Link href="/careers">
+        <Link href="/images/Saad_Sayyed_Resume.pdf">
           <p className="font-agrandir text-xs font-light tracking-wider">
-            Careers
+            Resume
           </p>
         </Link>
         <Link href="/">
