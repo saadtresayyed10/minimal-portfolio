@@ -51,8 +51,8 @@ const ExperienceComponent = () => {
         </div>
       </div>
       <ul className="flex justify-start items-start flex-col font-agrandir gap-y-2 w-[90%] lg:w-full text-neutral-800 dark:text-neutral-200 text-xs lg:text-sm capitalize mt-6 list-disc lg:ml-0 ml-4">
-        {expDescList.map((lists) => (
-          <li>{lists.list}</li>
+        {expDescList.map((lists, idx) => (
+          <li key={idx}>{lists.list}</li>
         ))}
       </ul>
     </div>
