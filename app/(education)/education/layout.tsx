@@ -4,7 +4,7 @@ import Footer from "@/app/(home)/_components/Footer";
 const LayoutEd = ({ children }: { children: React.ReactNode }) => {
   return (
     <div>
-      <header>
+      <header className="sticky top-0 w-full z-50">
         <NestNav />
       </header>
       <main>{children}</main>
