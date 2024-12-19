@@ -26,7 +26,7 @@ const EducationPage = () => {
           desc="Learning to master data science, machine learning, AI models, predictive analytics, and innovative solutions for real-world applications."
           logo="/images/michi.png"
           timeline="2024 - 2027"
-          univ="Fashion as Design"
+          univ="University of Michigan"
         />
         <ContentCard
           degree="Fashion as Design"

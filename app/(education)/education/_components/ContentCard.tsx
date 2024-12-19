@@ -23,7 +23,7 @@ export function ContentCard({
       <div
         className={cn(
           " cursor-pointer overflow-hidden relative card h-96 rounded-md shadow-xl  max-w-sm mx-auto backgroundImage flex flex-col justify-between p-4",
-          "bg-[url(https://images.unsplash.com/photo-1490814525860-594e82bfd34a?q=80&w=1795&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-cover"
+          "bg-[url(https://images.unsplash.com/photo-1515549832467-8783363e19b6?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-cover"
         )}
       >
         <div className="absolute w-full h-full top-0 left-0 transition duration-300 group-hover/card:bg-black opacity-60"></div>
@@ -36,17 +36,17 @@ export function ContentCard({
             className="h-10 w-10 rounded-full border-2 object-cover"
           />
           <div className="flex flex-col">
-            <p className="font-normal text-base text-gray-50 relative z-10">
+            <p className="font-normal text-base text-black relative z-10">
               {univ}
             </p>
-            <p className="text-sm text-gray-400">{timeline}</p>
+            <p className="text-sm text-black">{timeline}</p>
           </div>
         </div>
         <div className="text content">
-          <h1 className="font-bold text-xl md:text-2xl text-gray-50 relative z-10">
+          <h1 className="font-bold text-xl md:text-2xl text-black relative z-10">
             {degree}
           </h1>
-          <p className="font-normal text-sm text-gray-50 relative z-10 my-4">
+          <p className="font-normal text-sm text-black relative z-10 my-4">
             {desc}
           </p>
         </div>
