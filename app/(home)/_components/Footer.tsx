@@ -31,14 +31,14 @@ const Footer = () => {
         </Link>
       </div>
       <div className="flex justify-center items-center lg:gap-x-10 gap-x-6">
-        <Link href="/images/Saad_Sayyed_Resume.pdf">
+        <Link target="_blank" href="/images/Saad_Sayyed_Resume.pdf">
           <p className="font-agrandir text-xs font-light tracking-wider">
             Resume
           </p>
         </Link>
-        <Link href="/">
+        <Link target="_blank" href="https://groven-portfolio.vercel.app/">
           <p className="font-agrandir text-xs font-light tracking-wider">
-            Blog
+            Agency
           </p>
         </Link>
       </div>
