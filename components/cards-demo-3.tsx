@@ -67,7 +67,7 @@ const Skeleton = () => {
 
   useEffect(() => {
     animate(sequence, {
-      // @ts-expect-error
+      // @ts-expect-error Repeat and repeatDelay are not recognized as valid keys by TypeScript, but they are supported by the animate function.
       repeat: Infinity,
       repeatDelay: 1,
     });
