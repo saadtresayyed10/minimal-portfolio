@@ -4,7 +4,6 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 
 interface ContentCardProps {
-  css: string;
   logo: string;
   univ: string;
   timeline: string;
@@ -13,7 +12,6 @@ interface ContentCardProps {
 }
 
 export function ContentCard({
-  css,
   degree,
   desc,
   logo,
@@ -25,7 +23,7 @@ export function ContentCard({
       <div
         className={cn(
           " cursor-pointer overflow-hidden relative card h-96 rounded-md shadow-xl  max-w-sm mx-auto backgroundImage flex flex-col justify-between p-4",
-          "bg-[url(https://images.unsplash.com/photo-1523800503107-5bc3ba2a6f81?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-cover"
+          "bg-[url(https://images.unsplash.com/photo-1490814525860-594e82bfd34a?q=80&w=1795&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-cover"
         )}
       >
         <div className="absolute w-full h-full top-0 left-0 transition duration-300 group-hover/card:bg-black opacity-60"></div>
@@ -34,23 +32,22 @@ export function ContentCard({
             height="100"
             width="100"
             alt="Avatar"
-            src="/images/avon.png"
+            src={logo}
             className="h-10 w-10 rounded-full border-2 object-cover"
           />
           <div className="flex flex-col">
             <p className="font-normal text-base text-gray-50 relative z-10">
-              Bachelors&apos;s in Computer Science
+              {univ}
             </p>
-            <p className="text-sm text-gray-400">2021 - 2024</p>
+            <p className="text-sm text-gray-400">{timeline}</p>
           </div>
         </div>
         <div className="text content">
           <h1 className="font-bold text-xl md:text-2xl text-gray-50 relative z-10">
-            Author Card
+            {degree}
           </h1>
           <p className="font-normal text-sm text-gray-50 relative z-10 my-4">
-            Card with Author avatar, complete name and time to read - most
-            suitable for blogs.
+            {desc}
           </p>
         </div>
       </div>
