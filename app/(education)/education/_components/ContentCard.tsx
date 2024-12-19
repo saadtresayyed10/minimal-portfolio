@@ -1,8 +1,25 @@
 "use client";
+
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 
-export function ContentCard() {
+interface ContentCardProps {
+  css: string;
+  logo: string;
+  univ: string;
+  timeline: string;
+  degree: string;
+  desc: string;
+}
+
+export function ContentCard({
+  css,
+  degree,
+  desc,
+  logo,
+  timeline,
+  univ,
+}: ContentCardProps) {
   return (
     <div className="max-w-xs w-full group/card font-agrandir">
       <div
