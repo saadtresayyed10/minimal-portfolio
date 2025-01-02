@@ -2,6 +2,7 @@
 
 import { ThemeSwitch } from "@/components/ui/switch";
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [currentTime, setCurrentTime] = useState<string>("");
@@ -42,20 +43,30 @@ const Navbar = () => {
 
   return (
     <nav className="flex justify-between items-center lg:px-10 px-6 py-4">
-      <div className="flex justify-center items-center flex-col">
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4, ease: "backOut", delay: 0.4 }}
+        className="flex justify-center items-center flex-col"
+      >
         <h1 className="font-agrandir text-2xl font-semibold tracking-wider">
           {currentTime}
         </h1>
         <h1 className="font-agrandir text-sm font-light tracking-wider">
           {currentDate}
         </h1>
-      </div>
-      <div className="flex justify-center items-center flex-col gap-y-2">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4, ease: "backOut", delay: 0.4 }}
+        className="flex justify-center items-center flex-col gap-y-2"
+      >
         <ThemeSwitch />
         <p className="font-agrandir text-[8px] font-light tracking-wider">
           Light & Dark
         </p>
-      </div>
+      </motion.div>
     </nav>
   );
 };
