@@ -19,7 +19,7 @@ export function ContentCard({
   univ,
 }: ContentCardProps) {
   return (
-    <div className="max-w-xs w-full group/card font-agrandir">
+    <div className="max-w-xs w-full group/card font-agrandir border-2 border-black rounded-md">
       <div
         className={cn(
           " cursor-pointer overflow-hidden relative card h-96 rounded-md shadow-xl  max-w-sm mx-auto backgroundImage flex flex-col justify-between p-4",

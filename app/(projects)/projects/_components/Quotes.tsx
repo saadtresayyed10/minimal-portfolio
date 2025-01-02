@@ -121,7 +121,7 @@ const DailyMotivation = () => {
         {motivation.action}
       </p>
       <WordPullUp
-        className="mt-10 capitalize block lg:hidden text-xs text-muted-foreground"
+        className="mt-10 capitalize block text-xs text-muted-foreground"
         words="Please swipe right to see next project."
       />
     </div>
